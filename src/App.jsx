@@ -1,23 +1,18 @@
-import React, { Component } from "react";
 import "./App.css";
+import React, { Component } from "react";
+import Tasks from "./Components/OverviewClass";
 
 class App extends Component {
   render() {
     return (
-      <main
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          textAlign: "center",
-        }}
-      >
-        <h1>React Hooks</h1>
-      </main>
+      <div className="App">
+        <header className="App-header">
+          <h1>To-Do App</h1>
+          <Tasks />
+        </header>
+      </div>
     );
   }
 }
 
 export default App;
-
-//comment 
